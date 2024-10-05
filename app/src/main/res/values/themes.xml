@@ -1,0 +1,41 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TeacherRetirement" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+
+         <item name="colorPrimary">@color/color4</item>
+
+        <item name="android:statusBarColor">@color/white</item>
+
+        <item name="android:windowBackground">@drawable/splash_background</item>
+
+    </style>
+
+    <style name="Theme.TeacherRetirement" parent="Base.Theme.TeacherRetirement" />
+
+z
+    <style name="roundedImageViewRounded">
+        <item name="cornerFamily">rounded</item>
+        <item name="colorOnBackground">#433333</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="CustomDatePicker" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <!-- Customize the date picker colors -->
+        <item name="materialCalendarTheme">@style/CustomCalendarTheme</item>
+    </style>
+
+    <style name="CustomCalendarTheme" parent="Widget.MaterialComponents.MaterialCalendar">
+        <item name="colorPrimary">#06EF9D</item>
+        <item name="colorPrimaryVariant">#00BCD4</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+
+
+    <!--todo bunu ben ekledkm   -->
+    <style name="roundedImageViewRounded1">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">5%</item>
+    </style>
+
+</resources>

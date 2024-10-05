@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="teacher.retirementcountdown.app.activity.ImagesActivity">
+
+
+    <TextView
+        android:layout_marginVertical="20dp"
+        android:layout_gravity="center"
+        android:textColor="@color/color4"
+        android:textSize="25sp"
+        android:fontFamily="@font/c"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CUSTOM BACKGROUND"
+        android:gravity="center"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:paddingHorizontal="10dp">
+
+
+        <Button
+            android:fontFamily="@font/c"
+            android:id="@+id/addImageButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Upload Image"/>
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="0dp"/>
+
+
+
+        <Button
+            android:id="@+id/setDuration"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/c"
+            android:text="Set Duration"/>
+
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="0dp"/>
+
+
+
+        <Button
+            android:id="@+id/deleteAllImages"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/c"
+            android:text="Delete All"/>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp">
+
+
+        <Button
+            android:id="@+id/selectAllButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Select All"/>
+
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="0dp"/>
+
+        <Button
+            android:id="@+id/setBlur"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Set Bluring"/>
+
+
+    </LinearLayout>
+
+
+    <com.google.android.gms.ads.AdView
+        android:background="@color/white"
+        android:id="@+id/adView"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9337512190425159/9314594375"/>
+
+</LinearLayout>
